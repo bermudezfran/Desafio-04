@@ -4,45 +4,134 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
   <title>Vení al Gym</title>
 </head>
 
-<body class="body">
-  <script type="module" src="/main.js"></script>
+<body>
+  <script type="module" src="main.js"></script>
   <main>
     <header class="header">
       <h1>Vení al Gym! 💪</h1>
     </header>
-    <div class="form-container">
-      <article class="form-header">
-        <span>👤 Datos Personales 👀</span>
-      </article>
-      <form action="#" class="formulario">
-        <label for="nombre">Nombre:*</label>
-        <input type="text" name="nombre" id="nombre">
-  
-        <label for="apellido">Apellido:*</label>
-        <input type="text" name="apellido" id="apellido">
-  
-        <label for="documento">Documento:*</label>
-        <input type="text" name="documento" id="documento">
-  
-        <label for="nacionalidad">Nacionalidad:*</label>
-        <select name="nacionalidad" id="nacionalidad">
-          <option value="any">- Seleccionar -</option>
-          <option value="argentina">Argentina</option>
-          <option value="uruguaya">Uruguaya</option>
-        </select>
-  
-        <label for="descripcion">Contanos un poco de vos...</label>
-        <textarea name="descripcion" id="descripcion"></textarea>
-  
-        <label for="sexo">Sexo:*</label>
-        <input type="radio" name="sexo" id="femenino"> <span>Femenino</span>
-        <input type="radio" name="sexo" id="masculino"> <span>Masculino</span>
-        <input type="radio" name="sexo" id="otro"> <span>Otro</span>
-      </form>
-    </div>
+
+    <form action="#" class="formulario">
+
+      <!-- Datos Personales -->
+      <div class="form-container">
+        <article class="form-header">
+          <span>👤 Datos Personales 👀</span>
+        </article>
+
+        <div class="form-section">
+          <div>
+            <label for="nombre">Nombre:*</label> <br>
+            <input type="text" name="nombre" id="nombre">
+          </div>
+          <div>
+
+            <label for="apellido">Apellido:*</label> <br>
+            <input type="text" name="apellido" id="apellido">
+          </div>
+          <div>
+            <label for="documento">Documento:*</label> <br>
+            <input type="text" name="documento" id="documento">
+
+          </div>
+          <div>
+            <label for="nacionalidad">Nacionalidad:*</label> <br>
+            <select name="nacionalidad" id="nacionalidad">
+              <option value="any">- Seleccionar -</option>
+              <option value="argentina">Argentina</option>
+              <option value="uruguaya">Uruguaya</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-section">
+          <label for="descripcion">Contanos un poco de vos...</label> <br>
+          <textarea name="descripcion" id="descripcion"></textarea>
+        </div>
+
+        <div>
+          <label for="sexo">Sexo:*</label> <br>
+          <input type="radio" name="sexo" id="femenino" value="femenino"> <span class="negro">Femenino</span>
+          <input type="radio" name="sexo" id="masculino" value="masculino"> <span class="negro">Masculino</span>
+          <input type="radio" name="sexo" id="otro" value="otro"> <span class="negro">Otro</span>
+        </div>
+      </div>
+
+      <!-- Datos de Contacto -->
+      <div class="form-container">
+        <article class="form-header">
+          <span>📧Datos de contacto📱</span>
+        </article>
+
+        <div class="form-section">
+          <label for="telefono">Teléfono:</label> <br>
+          <input type="text" name="telefono" id="telefono" placeholder="Código de área y número">
+          <div>
+            <label for="email">Dirección de correo electrónico:</label> <br>
+            <input type="email" name="email" id="email" placeholder="Ej: mail@gmail.com">
+          </div>
+        </div>
+      </div>
+
+      <!-- Actividades -->
+      <div class="form-container">
+        <article class="form-header-doss">
+          <span>🚴‍♀️Actividades🤸‍♂️</span>
+        </article>
+
+        <div class="form-section-actividad">
+          <span class="negro light">Por favor, indica cuales actividades te interesan.</span> <br>
+          <article class="articulo-palermo">
+          <label class="titulo" for="sede-palermo">Sede Palermo:</label>
+          <div>
+            <input type="checkbox" name="actividad" id="basquet-palermo" value="basquet-palermo"> <span
+              class="negro">Basquet</span>
+            <input type="checkbox" name="actividad" id="boxeo-palermo" value="boxeo-palermo"> <span
+              class="negro">Boxeo</span>
+            <input type="checkbox" name="actividad" id="futbol-palermo" value="futbol-palermo"> <span
+              class="negro">Futbol</span>
+            <input type="checkbox" name="actividad" id="tenis-palermo" value="tenis-palermo"> <span
+              class="negro">Tenis</span>
+          </div>
+        </article>
+        <article class="articulo-rosario">
+          <label class="titulo" for="sede-rosario">Sede Rosario:</label>
+          <div>
+            <input type="checkbox" name="actividad" id="basquet-rosario" value="basquet-rosario"> <span
+              class="negro">Basquet</span>
+            <input type="checkbox" name="actividad" id="futbol-rosario" value="futbol-rosario"> <span
+              class="negro">Futbol</span>
+            <input type="checkbox" name="actividad" id="rugby-rosario" value="rugby-rosario"> <span
+              class="negro">Rugby</span>
+            <input type="checkbox" name="actividad" id="voley-rosario" value="voley-rosario"> <span
+              class="negro">Voley</span>
+          </div>
+        </article>
+          
+        </div>
+      </div>
+
+      <!-- Condiciones y Botones -->
+      <div class="form-container-footer">
+        <footer class="form-footer">
+          <input type="checkbox" name="aceptoTyC" id="aceptoTyC"> <label for="aceptoTyC">Acepto las
+            condiciones*</label><br>
+          <input type="checkbox" name="novedades" id="novedades"> <label for="novedades">Deseo recibir
+            novedades*</label><br>
+          <span><b>*: Campo obligatorio</b></span>
+        </footer>
+      </div>
+      <div class="form-buttons">
+        <button type="submit" class="submit-button">Iniciar afiliación</button>
+        <button type="reset" class="reset-button">Restablecer</button>
+      </div>
+    </form>
   </main>
 </body>
 
