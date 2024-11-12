@@ -1,6 +1,17 @@
+:root {
+  --bg-primary: #000;
+  --bg-green-dark: #4d6d63;
+  --bg-green-secondary: #1e6f5c;
+  --buttons-primary: #5c636e;
+  --normal-border-light: #ffffff;
+  --border-primary: #aaa;
+  --green-light: #a6c1b9;
+}
+
+
 
 body {
-  background-color: #000;
+  background-color: var(--bg-primary);
   color: #fff;
   font-family: Roboto, sans-serif;
   padding: 20px;
@@ -13,7 +24,7 @@ h1 {
 }
 
 .header {
-  border: 15px groove #4d6d63;
+  border: 15px groove var(--bg-green-dark);
   border-left: none;
   border-right: none;
   width: 50%;
@@ -22,7 +33,7 @@ h1 {
 
 .form-container {
   margin: auto;
-  background-color: #a6c1b9;
+  background-color: var(--green-light);
   padding: 20px;
   margin-bottom: 20px;
   margin-top: 2em;
@@ -48,7 +59,7 @@ h1 {
 .form-header, .form-header-dos, .form-header-doss {
   font-weight: bold;
   color: #fff;
-  background-color: #4d6d63;
+  background-color: var(--bg-green-dark);
   padding: 5px 15px;
   border-radius: 8px;
   position: absolute;
@@ -90,7 +101,7 @@ textarea {
   max-width: 400px;
   padding: 8px;
   margin-bottom: 15px;
-  border: 1px solid #aaa;
+  border: 1px solid var(--border-primary);
   border-radius: 5px;
   font-size: 14px;
   color: #000;
@@ -102,7 +113,7 @@ input[type="email"]:focus,
 textarea:focus,
 select:focus {
   color: #FFF;
-  background-color: #4d6d63;; 
+  background-color: var(--bg-green-dark); 
   outline: none; 
 }
 
@@ -142,13 +153,13 @@ textarea {
 
 .submit-button {
   padding: 1em;
-  background-color: #1e6f5c;
+  background-color: var(--bg-green-secondary);
   color: black;
 }
 
 .reset-button {
   padding: 1em;
-  background-color: #5c636e;
+  background-color: var(--buttons-primary);
   color: black;
 }
 
