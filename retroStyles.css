@@ -1,0 +1,140 @@
+
+:root {
+    --win-bg: #c3c7c9;
+    --win-border-dark: #4d4d4d;
+    --win-border-light: #ffffff;
+    --win-text: #000000;
+    --win-highlight: #000080;
+    --win-button-bg: #e0e0e0;
+  }
+  
+  
+  body {
+    background-color: var(--win-bg);
+    font-family: 'Tahoma', sans-serif;
+    color: var(--win-text);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  
+  .form-container {
+    background-color: var(--win-bg);
+    border: 2px solid var(--win-border-dark);
+    padding: 15px;
+    padding-top: 2em;
+    margin-bottom: 3em;
+    box-shadow: 2px 2px 0 var(--win-border-dark), -2px -2px 0 var(--win-border-light);
+    width: 90%;
+    max-width: 600px;
+    position: relative;
+  }
+
+  .form-buttons {
+    margin-left: 4em;
+  }
+  
+
+  .header {
+    background-color: var(--win-bg);
+    color: var(--win-highlight);
+    text-align: center;
+    padding: 10px;
+    font-size: 1.5em;
+    font-weight: bold;
+    border: 2px solid var(--win-border-dark);
+    box-shadow: 2px 2px 0 var(--win-border-dark), -2px -2px 0 var(--win-border-light);
+    margin-bottom: 50px;
+  }
+  
+
+  .form-header, .form-header-dos, .form-header-doss {
+    font-weight: bold;
+    color: var(--win-text);
+    background-color: var(--win-bg);
+    padding: 5px 10px;
+    border: 2px solid var(--win-border-dark);
+    box-shadow: 2px 2px 0 var(--win-border-dark), -2px -2px 0 var(--win-border-light);
+    position: absolute;
+    top: -15px;
+    left: 10px;
+  }
+  
+  
+  input[type="text"],
+  input[type="email"],
+  select,
+  textarea {
+    background-color: var(--win-button-bg);
+    color: var(--win-text);
+    border: 2px solid var(--win-border-light);
+    padding: 5px;
+    font-size: 14px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: inset -2px -2px 0 var(--win-border-light), inset 2px 2px 0 var(--win-border-dark);
+    margin-bottom: 10px;
+    transition: all 0.2s ease;
+  }
+  
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  select:focus,
+  textarea:focus {
+    outline: none;
+    border: 2px solid var(--win-highlight);
+  }
+  
+  
+  input[type="radio"],
+  input[type="checkbox"] {
+    accent-color: var(--win-highlight);
+    margin-right: 5px;
+  }
+  
+  
+  label {
+    font-size: 0.9em;
+    font-weight: bold;
+    color: var(--win-text);
+    display: block;
+    margin-bottom: 2px;
+  }
+  
+  
+  .negro.light {
+    font-size: 0.85em;
+    color: var(--win-text);
+    margin-bottom: 10px;
+    font-style: italic;
+  }
+  
+  
+  .form-footer {
+    background-color: var(--win-bg);
+    padding: 10px;
+    border-top: 2px solid var(--win-border-dark);
+    text-align: center;
+    box-shadow: inset -2px -2px 0 var(--win-border-light), inset 2px 2px 0 var(--win-border-dark);
+  }
+  
+  
+  .submit-button,
+  .reset-button {
+    background-color: var(--win-button-bg);
+    color: var(--win-text);
+    font-size: 1em;
+    padding: 5px 10px;
+    margin: 5px;
+    border: 2px solid var(--win-border-light);
+    box-shadow: -2px -2px 0 var(--win-border-light), 2px 2px 0 var(--win-border-dark);
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .submit-button:active,
+  .reset-button:active {
+    box-shadow: inset -2px -2px 0 var(--win-border-light), inset 2px 2px 0 var(--win-border-dark);
+    background-color: var(--win-bg);
+  }
